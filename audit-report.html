@@ -1,0 +1,356 @@
+---
+layout: report
+---
+{% include page-header.html pb-width="60" %}
+<div class="container-fluid">
+	<div class="row">
+		<nav class="bg-light sidebar">
+			<ul class="nav flex-column">
+				<li class="nav-item">
+					<a class="nav-link" href="#" data-toggle="tooltip" data-placement="right" title="Back to top" data-container="body">
+					  <i class="fa fa-arrow-alt-circle-up"></i> 
+					</a>
+				</li>
+				<li class="nav-item" id="blocka-link">
+					<a class="nav-link" href="#block-a" data-toggle="tooltip" data-placement="right" data-container="body" title="Results">
+					  <i class="fa fa-chart-bar mr-2"></i>
+					</a>
+				</li>
+				<li class="nav-item" id="blockc-link">
+					<a class="nav-link" href="#block-c" data-toggle="tooltip" data-placement="right" data-container="body" title="Recommendations for action ">
+					  <i class="fa fa-check mr-2"></i>
+					</a>
+				</li>
+				<li class="nav-item" id="blockd-link">
+					<a class="nav-link" href="#block-d" data-toggle="tooltip" data-placement="right" data-container="body" title="Further information">
+					  <i class="fa fa-info-circle mr-2"></i>
+					</a>
+				</li>
+				<li class="nav-item" id="blocke-link">
+					<a class="nav-link" href="#block-e" data-toggle="tooltip" data-placement="right" data-container="body" title="About the National Diabetes Audit">
+					  <i class="fa fa-star mr-2"></i> 
+					</a>
+				</li>
+				<li class="nav-item" id="blockf-link">
+					<a class="nav-link" href="#block-f" data-toggle="tooltip" data-placement="right" data-container="body" title="A patient account">
+					  <i class="fa fa-comment-alt mr-2"></i>
+					</a>
+				</li>
+			</ul>
+		</nav>
+		<main role="main" class="ml-sm-autopx-4">
+			<div id="message" class="alert alert-success-fade alert-dismissible fade show">Please read the feedback on this page and click next to continue
+				<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+			</div>
+			<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+				<h1 class="h2">National Diabetes Audit<small class="text-muted">2017-2018</small>
+				      <!--<label class="switch pull-right">
+					<input type="checkbox" id="toggleSwitch" onclick="toggleSwitch()">
+					<span class="slider round"></span>
+				      </label>-->
+				</h1>
+			</div><!--end d-flex--->
+			<h2 id="standard">Audit standard</h2>
+				<div id="audit-standard" class="audit-standard" title="Audit standard">
+					<blockquote class="blockquote" style="border-left:5px,blue">
+				      	<p class="mb-0">Adults with type 2 diabetes whose HbA1c level is 58mmol/mol 7.5% or above after 6 months with single-drug treatment are offered dual therapy.</p>
+			      </blockquote>
+			</div><!--audit standard--->
+			<h2 id="blocka-header">Results</h2>
+			      <p>Your practice achieved this standard of care for <strong>86% (318/370) of patients</strong>.</p>
+			<div id="block-a" title="mod-7">
+			      <p class="toggle-mod" style="display:block">The top 25% of practices achieved this for <strong>93.7% or better</strong> of patients.</p>
+			      <p class="toggle-mod" style="display:none">This compares to the national achievement of <strong>79%.</strong></p>
+			</div><!--end block a-->
+			<div id="block-b" title="mod-9">
+			      <div class="toggle-mod" style="display:block">
+				    <p>This chart shows your performance in comparison with other general practices.</p>
+				    {% include mod-9-svg.html %}  
+			      </div>
+			      <div class="toggle-mod" style="display:none">
+				    <!--Off contains no content-->  
+			      </div>
+			</div><!--end block b-->
+			<div id="block-c" title="mod-3" class="section">
+			      <div class="toggle-mod">
+				    <h2 id="blockc-header">Recommendations for action</h2>
+				    <ul class="list-group">
+					  <li class="list-group-item">
+						<i class="fas fa-check-circle mr-1"></i>Identify adult patients with type 2 diabetes whose HbA1c level is 58mmol/mol or above.
+					  </li>
+					  <li class="list-group-item">
+						<i class="fas fa-check-circle mr-1"></i>Identify which of these patients have been treated with a single drug for 6 months or longer.
+					  </li>
+					  <li class="list-group-item">
+						<i class="fas fa-check-circle mr-1"></i>Invite these patients for a consultation to discuss HbA1c test results.
+					  </li>
+					  <li class="list-group-item">
+						<i class="fas fa-check-circle mr-1"></i>Discuss treatment options and offer dual-therapy, if appropriate.
+					  </li>                
+				    </ul>
+			      </div>
+			      <div class="toggle-mod" style="display:none">
+				    <!--Off contains no content--> 
+			      </div>
+			</div><!--end block c-->
+			<div id="block-d" title="mod-12" class="section">
+				<h2 id="blockd-header">Further information</h2>
+			      <div class="row">
+				      <div class="col-md-4">
+					      	<ul class="nav nav-tabs flex-column" id="myTab" role="tablist" aria-orientation="vertical">
+							<li class="nav-item">
+								<a class="nav-link active" id="home-tab" data-toggle="tab" href="#evidence" role="tab" aria-controls="evidence" aria-selected="true">What is the evidence base for HbA1c target levels?</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" id="therapies-tab" data-toggle="tab" href="#therapies" role="tab" aria-controls="therapies" aria-selected="false">What are the options if single drug therapy if the HbA1c level is 58mmol/mol or above?</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" id="patients-tab" data-toggle="tab" href="#patients" role="tab" aria-controls="patients" aria-selected="false">Which of our patients with type 2 diabetes have an HbA1c level of 58mmol/mol or above?</a>
+							</li>
+						</ul>
+				      </div>
+			      <div class="col">
+					<div class="tab-content">
+						<div class="tab-pane active" id="evidence" role="tabpanel" aria-labelledby="evidence-tab">
+							<div class="col-lg-12 col-sm-12 col-md-12 col-xs-12">
+								<ul>
+									<li><span class="warning" style="font-size: xx-large">48+</span> <label>mmol/mol HbA1c&nbsp;</label><i class="fa fa-arrow-right warning"></i> <strong>&nbsp;Risk of microvascular complications</strong> increases significantly</li><br />
+									<li><span class="danger" style="font-size: xx-large">53+</span> <label>mmol/mol HbA1c&nbsp;</label><i class="fa fa-arrow-right danger"></i> <strong>&nbsp;Risk of mortality and macrovascular complications</strong> increases significantly</li><br />
+									<li>All-cause mortality risk increases with increasing baseline levels of HbA1c.</li>
+								</ul>
+							</div>
+							<div class="pull-right">
+								<a href="#" data-toggle="tooltip" data-placement="top" class="btn btn-outline-secondary mr-2" data-original-title="This will link to NICE guidelines in live experiment">View NICE guidance</a>
+							</div> 
+						</div>
+					  <div class="tab-pane" id="patients" role="tabpanel" aria-labelledby="patients-tab">
+					      <div class="col-sm-12">
+						  <h4></h4>
+					      </div>
+						<div class="table-responsive manage-table">
+						    <table class="table">
+							<thead>
+							    <tr>
+								<th>NAME</th>
+								<th>NHS Number</th>
+								<th>Last HbA1c level</th>
+								<th>Actions</th>
+							    </tr>
+							</thead>
+							<tbody>
+							    <tr class="advance-table-row">
+								<td>Andrew Simons</td>
+								<td>434 897 2136</td>
+								<td>69</td>
+								<td><button type="button" class="btn btn-outline-secondary" data-toggle="tooltip" data-placement="top" title="In a real audit report this would link to a table containing individual patient records">
+								  Patient details
+								</button></td>
+							    </tr>
+							    <tr class="advance-table-row">
+								<td>Hanna Gover</td>
+								<td>434 765 3241</td>
+								<td>76</td>
+								<td><button type="button" class="btn btn-outline-secondary" data-toggle="tooltip" data-placement="top" title="In a real audit report this would link to a table containing individual patient records">
+								  Patient details
+								</button></td>
+							    </tr>
+							    <tr class="advance-table-row">
+								<td>Joshi Nirav</td>
+								<td>434 456 1101</td>
+								<td>72</td>
+								<td><button type="button" class="btn btn-outline-secondary" data-toggle="tooltip" data-placement="top" title="In a real audit report this would link to a table containing individual patient records">
+								  Patient details
+								</button></td>
+							    </tr>
+							    <tr class="advance-table-row">
+								<td>Joshi Sunil</td>
+								<td>434 456 1101</td>
+								<td>65</td>
+								<td><button type="button" class="btn btn-outline-secondary" data-toggle="tooltip" data-placement="top" title="In a real audit report this would link to a table containing individual patient records">
+								  Patient details
+								</button></td>
+							    </tr>
+							</tbody>
+						    </table>
+						</div><!--end table-responsive-->
+					  </div><!--end patient tab-pane-->
+					  <div class="tab-pane" id="therapies" role="tabpanel" aria-labelledby="therapies-tab">
+						<h4></h4>
+						      <div class="table-responsive manage-table">
+							  <table class="table">
+							      <thead>
+								  <tr>
+								      <th>Metformin combinations</th>
+								      <th>Other (Metaformin intolerant/contraindicated)</th>
+								  </tr>
+							      </thead>
+							      <tbody>
+								  <tr class="advance-table-row">
+								      <td>Metformin plus a gliptin</td>
+								      <td>A gliptin plus pioglitazone</td>
+								  </tr>
+								  <tr class="advance-table-row">
+								      <td>Metformin plus pioglitazone</td>
+								      <td>A gliptin plus a sulfonylurea</td>
+								  </tr>
+								  <tr class="advance-table-row">
+								      <td>Metformin plus a sulfonylurea</td>
+								      <td>Pioglitazone plus a sulfonylurea</td>
+								  </tr>
+								  <tr class="advance-table-row">
+								      <td>Metformin plus a Sodium-glucose <br>co-transporter 2 inhibitor (SGLT-2i)</td>
+								      <td>An SGLT-2i instead of a gliptin if  <br>a sulfonylurea or pioglitazone is not appropriate</td>
+								  </tr>
+							      </tbody>
+							  </table>
+						      </div><!--end table-responsive-->
+						</div><!--end therapies tab-pane-->
+					  </div><!--end mod-on-->
+					  <div class="toggle-mod" style="display:none">
+						 <!--Off contains no content-->       
+					  </div>
+				    </div>				      
+				</div>
+			</div><!--end block d-->
+			<div id="block-e" title="mod-10" class="section">
+			      <div class="toggle-mod" style="display:none">
+				     <!--On contains no content-->       
+			      </div>
+			      <div class="section">
+				      <h2 id="blocke-header">About the National Diabetes Audit</h2>
+				     <div class="row">
+					<div class="col">
+						<p>The NDA supports improvement in the quality of diabetes care by enabling participating NHS services and organisations to:</p>
+						<ul>
+							<li>Assess local practice against NICE guidelines</li>
+							<li>Compare their care and care outcomes with similar services and organisations</li>
+							<li>Identify gaps or shortfalls that are priorities for improvement</li>
+							<li>Identify and share best practice</li>
+							<li>Provide comprehensive national pictures of diabetes care and outcomes in England and Wales</li>
+						</ul>
+						<p>Through participation in the audit, local services are able to benchmark their performance and identify where they are performing well and improve the quality of treatment and care they provide.</p>
+					  </div>
+					  <div class="col">
+						<strong>National percentage of people with type 2 diabetes receiving NICE recommended care processes 2017-18.</strong>
+						<ul class="list-group">
+							<li class="list-group-item">HbA1c<span class="label label-default pull-right">95.3%</span></li>
+							<li class="list-group-item">Blood pressure<span class="label label-default pull-right">96.3%</span></li>
+							<li class="list-group-item">Serum cholesterol<span class="label label-default pull-right">92.9%</span></li>
+							<li class="list-group-item">Serum creatinine<span class="label label-default pull-right">95.1%</span></li>
+							<li class="list-group-item">Urine Albumin/Creatinine Ratio<span class="label label-default pull-right">66.2%</span></li>
+							<li class="list-group-item">Foot Risk Surveillance<span class="label label-default pull-right">86.8%</span></li>
+							<li class="list-group-item">Body Mass Index<span class="label label-default pull-right">8.0%</span></li>
+							<li class="list-group-item">Smoking History<span class="label label-default pull-right">95.5%</span></li>
+							<li class="list-group-item">All eight processes of care<span class="label label-default pull-right">58.8%</span></li>
+						</ul>
+					  </div>
+				    </div>
+
+			      </div>
+
+			</div><!--end block f-->
+			<div id="block-f" title="mod-16" class="patient-story section">
+			      <div class="toggle-mod">
+				    <h2 id="blockf-header">A patient account</h2>
+				    <div class="media">
+				      <img src="/images/patient.png" alt="patient photo" class="img-circle img-responsive align-self-start mr-3" style="width:64px; height:64px">
+				      <div class="media-body">
+					<h5 class="mt-0">Daniel Kristeen</h5>
+					<p>I had struggled to keep my diabetes under control for over a year. I was taking medication already and seriously trying to improve my diet.  My Mum lost her sight because of diabetes and I was worried that this might happen to me.  My doctor prescribed me another medicine and suggested I try it for a while to see if it made an improvement.</p>
+					<p>Although I had doubts about starting another medicine, I’m glad that I did because my blood sugar is better now and I haven’t had any bad side effects. I know that doctors sometimes don’t want to push lots of medicines onto people with diabetes but it is only fair to the patient that they ask.</p>
+				      </div>
+				    </div>
+			      </div>
+			      <div class="toggle-mod" style="display:none">
+				     <!--Off contains no content-->       
+			      </div>
+			      <!--
+			      <div class="col-md-1 col-sm-1">
+				    <img src="" alt="patient photo" class="img-circle img-responsive">
+			      </div>
+			      <div class="col-md-11 col-sm-8">
+				    <h2 class="m-b-0">Daniel Kristeen</h2>
+				    <blockquote class="blockquote">
+				      <p class="mb-0"></p>
+				    </blockquote>
+				    <h4></h4>
+			      </div>
+			      -->
+			</div><!--end block e-->
+			
+			<div class="row button-bar">
+			       <a href="#" class="btn btn-link">Back to top</a>
+			      <a href="{{ site.baseurl }}/survey" data-toggle="tooltip" data-placement="right" title="Proceed to final task!" class="btn btn-success">Next</a>
+			</div>
+
+</main>
+      </div><!-- END ROW-->
+</div><!-- END CONTAINER_FLUID-->
+<!-- Patient info modals -->
+<div class="modal" tabindex="-1" role="dialog" id="guidelines">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+		  <div class="modal-header">
+		    <h5 class="modal-title" id="exampleModalLabel">Andrew Simons</h5>
+		    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		      <span aria-hidden="true">×</span>
+		    </button>
+		  </div>
+		  <div class="modal-body">
+		    <header id="displayheader" class="topic-header">
+			<a class="toggle-offcanvas" data-toggle="offcanvas"><span class="icon-nice-hamburger"></span></a>
+
+			<div class="navbar share-links pull-right">
+			    <div class="navbar-inner">
+				<ul class="nav">
+				    <li class="dropdown">
+					<a href="#" id="nice-share" class="dropdown-toggle icon-stack" data-toggle="dropdown" title="Share"><i class="icon-nice-circle icon-stack-base"></i><i class="icon-nice-share"></i></a>
+					<ul class="dropdown-menu pull-right addthis_toolbox" role="menu" aria-labelledby="nice-share">
+					    <li class="nav-header"><b>Share</b></li>
+					    <!-- AddThis Button BEGIN -->
+					    <li><a data-category="social - linkedin" class="addthis_button_linkedin addthis_event" target="_blank" title="LinkedIn" href="#"><i class="icon-linkedin"></i> Linked In</a></li>
+					    <li><a data-category="social - twitter" class="addthis_button_twitter addthis_event" title="Twitter" href="#"><i class="icon-nice-twitter"></i> Twitter</a></li>
+					    <li><a data-category="social - facebook" class="addthis_button_facebook addthis_event" title="Facebook" href="#"><i class="icon-nice-facebook"></i> Facebook</a></li>
+					    <li><a data-category="social - email" class="addthis_button_email addthis_event" target="_blank" title="Email" href="#"><i class="icon-nice-email-closed"></i> Email</a></li>
+					    <li><a class="addthis_button_more" target="_blank" title="More" href="#"><i class="icon-nice-plus"></i> More...</a></li>
+					    <!-- AddThis Button END -->
+					<div class="atclear"></div></ul>
+				    </li>
+				    <li><a id="printVersionLink" href="javascript:window.print()" class="icon-stack" title="Print friendly version" rel="nofollow"><i class="icon-nice-circle icon-stack-base"></i><i class="icon-nice-print"></i></a></li>
+				</ul>
+			    </div>
+			</div>
+			<h1 property="name">Diabetes - type 2</h1><span class="last_revision" style="display: block;">Last revised in August 2017
+			</span></header>
+			  <article>
+				<header><a href="#top" class="pull-right" data-track="back to top link">Back to top</a><h2>Scenario: Management - adults</h2></header>
+				<p class="age">Age from 18 years onwards</p>
+				<section class="scenariorecommendation" id="-350384"><header><a href="#top" class="pull-right" data-track="back to top link">Back to top</a><h3>Initial care and support</h3></header><ul><li class="level1"><b>Ensure that an individual care plan is set up for all adults with type 2 diabetes, </b>taking into account&nbsp;their personal preferences, comorbidities, risks from polypharmacy, and their ability to benefit from long-term interventions because of reduced life expectancy.</li><li class="level1"><b>Offer a&nbsp;structured group education programme, </b>for example the <a href="http://www.desmond-project.org.uk/">DESMOND</a> (Diabetes Education for Self-Management for Ongoing and Newly Diagnosed) programme,&nbsp;to the person and/or their family/carers.
+
+				</li><ul><li class="level2">Offer this programme at or around the time of diagnosis, with annual reinforcement and review.</li><li class="level2">Explain to the person and/or their family/carers that structured education is an integral part of diabetes care.</li><li class="level2">Provide an alternative of equal standard for a person unable or unwilling to participate in group education, depending on local availability.</li></ul><li class="level1"><b>Ensure&nbsp;that the person and/or their family/carers know how to contact the diabetes team&nbsp;</b>during working hours and out of hours, as available.&nbsp;</li><li class="level1"><b>Provide information on government disability benefits, </b>if needed — <a href="https://www.gov.uk/benefits-calculators">Benefits calculators</a> are available at <a href="https://www.gov.uk/">www.gov.uk</a>.</li><li class="level1"><b>Manage lifestyle issues, </b>such as diet and exercise.&nbsp;See the section on&nbsp;<a href="/diabetes-type-2#!scenariorecommendation:3">Lifestyle management</a>&nbsp;for more information.</li><li class="level1"><b>Screen for complications of type 2 diabetes, </b>such as retinopathy and diabetic foot problems.&nbsp;See the section on&nbsp;<a href="/diabetes-type-2#!scenariorecommendation:6">Screening for complications</a>&nbsp;for more information.</li><li class="level1"><b>Provide up-to-date information (including written information) on diabetes support groups (local and national),</b> including information on how to contact them and the benefits of membership.&nbsp;
+
+				</li><ul><li class="level2">For example, <a href="https://www.diabetes.org.uk/?gclid=CPqHpMedkMsCFckV0wod0qoJoQ">Diabetes UK</a> (a charity which provides information, support, and advocacy for people with diabetes) has a support helpline (0345 123 2399 or 0141 212 8710 [for Scotland])&nbsp;for people with diabetes and their family/carers.&nbsp;</li><li class="level2">Provide this information at the time of diagnosis and periodically thereafter.&nbsp;</li></ul></ul><section class="scenariobasis" id="-493023"><header><a href="#top" class="pull-right" data-track="back to top link">Back to top</a><h4>Basis for recommendation</h4></header><p>These recommendations are largely based on the&nbsp;National Institute for Health and Care Excellence (NICE) guideline&nbsp;<i>Type 2 diabetes in adults: management&nbsp;</i>[<a rel="citation" resource="1090203#A1295065" href="/diabetes-type-2#!references/1090203">NICE, 2015a</a>].&nbsp;The basis for the NICE recommendations has been briefly summarized in this section. For detailed information on the evidence NICE used to make these recommendations, see the <a href="https://www.nice.org.uk/guidance/ng28/evidence">full NICE guideline</a>.</p><p><b>Individual care plans</b></p><ul><li class="level1">NICE recommends an individualized approach to diabetes care that is tailored to the needs and circumstances of the person with type 2 diabetes&nbsp;[<a rel="citation" resource="1090203#A1295065" href="/diabetes-type-2#!references/1090203">NICE, 2015a</a>].</li><li class="level1">Expert opinion in the&nbsp;American Diabetes Association's <i>Standards of Medical Care in Diabetes </i>is&nbsp;that the&nbsp;management of people with diabetes should include developing a written plan with input from the person with diabetes and/or their family/carers[<a rel="citation" resource="1090203#A1300251" href="/diabetes-type-2#!references/1090203">ADA, 2016</a>]. &nbsp;</li></ul><p><b>Offering a structured education programme</b></p><ul><li class="level1">The NICE guideline development group (GDG) found limited robust evidence of the effectiveness of structured educational programmes for people with type 2 diabetes. However, in their expert opinion, understanding diabetes, making an informed choice on management opportunities, and the acquisition of relevant skills for successful self-management are vital for achieving optimal outcomes in people with type 2 diabetes and/or their family/carers&nbsp;[<a rel="citation" resource="1090203#A1295065" href="/diabetes-type-2#!references/1090203">NICE, 2015a</a>].
+
+
+				</li><ul><li class="level2">These can be achieved through structured education programmes, which the GDG defined as programmes that&nbsp;have been designed to improve the knowledge and skills of the person with diabetes and to help motivate and sustain them in taking control of their condition and in delivering effective self-management&nbsp;[<a rel="citation" resource="1090203#A1295065" href="/diabetes-type-2#!references/1090203">NICE, 2015a</a>].</li></ul><li class="level1">NICE does not make any recommendations on the choice of educational programme. However, the GDG noted that evidence from the DESMOND (Diabetes Education and Self Management for Ongoing and Newly Diagnosed) study showed changes in health beliefs, reduction in depression, increases in self-reported physical activity and weight reduction, and improvement in smoking status.&nbsp;</li><li class="level1">The GDG concluded that well-designed and well-implemented programmes were likely to be clinically- and cost-effective interventions for adults with type 2 diabetes for whom group education is appropriate.</li></ul><p><b>Providing information on government disability benefits, if needed</b></p><ul><li class="level1">CKS has extrapolated this recommendation from the NICE guideline <i>Diabetes (type 1 and type 2) in children and young people: diagnosis and management&nbsp;</i>[<a rel="citation" resource="1090203#A1295112" href="/diabetes-type-2#!references/1090203">NICE, 2015b</a>]&nbsp;as it may also be relevant for adults with type 2 diabetes and their family/carers.</li></ul><p><b>Providing information on support groups</b></p><ul><li class="level1">CKS has extrapolated this recommendation from the NICE guideline&nbsp;<i>Type 1 diabetes in adults: diagnosis and management&nbsp;</i>[<a rel="citation" resource="1090203#A1295090" href="/diabetes-type-2#!references/1090203">NICE, 2015d</a>]&nbsp;as it is also relevant for adults with type 2 diabetes and their family/carers.
+
+
+				</li><ul><li class="level2">The GDG of the NICE type 1 diabetes guideline found evidence that&nbsp;people with type 1 diabetes who do not have access to a community of support, especially the young or elderly living alone, may be less likely to be compliant with their medication regimen, putting them at risk of suboptimal blood glucose control and complications.</li></ul></ul></section></section>
+
+			  </article>
+		  </div>
+		  <div class="modal-footer">
+		    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+		  </div>
+		</div><!--end modal-content-->
+	</div><!--end modal-dialog-->
+</div><!--end modal-->
+
+<script>
+  document.getElementsByClassName("progress-bar")[0].setAttribute("style", "width:60%");
+      $('#mod12Tab a').on('click', function (e) {
+            e.preventDefault()
+            $(this).tab('show')
+      })
+</script>
