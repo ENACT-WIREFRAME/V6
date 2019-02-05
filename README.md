@@ -4,8 +4,11 @@ kick it
 
 Changes made:
 - udated mod10
-- reworded legend to be named 'your unit'
-- remove sub-numbering and add validation placeholders
+-  Audit page:
+  - reworded legend to be named 'your unit'
+- Surevy page
+  - remove sub-numbering and add validation placeholders
+  - fix label width
 
 
 To do:
