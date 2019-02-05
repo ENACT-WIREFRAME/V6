@@ -4,6 +4,7 @@ kick it
 
 Changes made:
 - udated mod10
+- reworded legend to be named 'your unit'
 
 
 To do:
