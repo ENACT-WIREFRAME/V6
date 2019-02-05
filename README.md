@@ -5,6 +5,7 @@ kick it
 Changes made:
 - udated mod10
 - reworded legend to be named 'your unit'
+- remove sub-numbering and add validation placeholders
 
 
 To do:
