@@ -9,11 +9,11 @@ Changes made:
 - Surevy page
   - remove sub-numbering and add validation placeholders
   - fix label width
-
+  - update outcomes
 
 To do:
-- Update content for this audit
 - Formatting on the thankyou screen
 - Fix logo on evidence-based-tips page
+- patient photo needs fixing on audit report page
 
 
