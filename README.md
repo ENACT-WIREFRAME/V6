@@ -10,6 +10,7 @@ Changes made:
   - remove sub-numbering and add validation placeholders
   - fix label width
   - update outcomes
+  - removed italicised text in outcome questions
 
 To do:
 - Formatting on the thankyou screen
