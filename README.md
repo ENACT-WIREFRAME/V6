@@ -11,6 +11,7 @@ Changes made:
   - fix label width
   - update outcomes
   - removed italicised text in outcome questions
+- Created and added email template
 
 To do:
 - Formatting on the thankyou screen
