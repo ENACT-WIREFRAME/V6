@@ -122,18 +122,28 @@ layout: page
 	//$('a').each(function (index, value){
  	// console.log($(this).attr('href'));
 	//});
-	var $submit = $('#submit');
+	//var $submit = $('#submit');
+	//	$checkbox = $('input[type=checkbox]');
+//
+//		$submit.prop('disabled', true);
+//
+//		$checkbox.on('click', function(){
+//		    if ($("input:checkbox:checked").each) {
+//			$submit.removeAttr('disabled');
+//		    }else{
+//			$submit.prop('disabled', true);
+//		    }
+//		});
+	$( document.body ).ready(function() {
 		$checkbox = $('input[type=checkbox]');
-
-		$submit.prop('disabled', true);
-
-		$checkbox.on('click', function(){
-		    if ($("input:checkbox:checked").each) {
-			$submit.removeAttr('disabled');
-		    }else{
-			$submit.prop('disabled', true);
-		    }
-		});
+	  	$checkbox.each(function( i ) {
+	    		if ($("input:checkbox:checked") {
+	      		$submit.removeAttr('disabled');
+	    		} else {
+	     		 $submit.prop('disabled', true);
+	    		}
+	  	});
+	});
 </script> 
 	
 
