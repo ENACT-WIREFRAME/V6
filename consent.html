@@ -97,7 +97,7 @@ layout: page
 							<div class="alert alert-secondary text-muted">{% include nihr-disclaimer.html %}</div>
 						</div><!-- end modal-body-->
 						<div class="modal-footer">
-							<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+							<button id="submit" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 						</div><!-- end modal-footer-->
 					</div><!-- end modal-content-->
 				</div><!-- end modal-->
@@ -111,6 +111,14 @@ layout: page
 <script>
 	$('#pis').on('shown.bs.modal', function () {
 	});
+	$(document).ready(function() {
+	$('#submit').prop('disabled', true); // disabled by default
+	$('input[type="checkbox"]').click(function() {
+       // change on checkbox click
+       $('#submit').prop('disabled', !$('input[type="checkbox"]').prop('checked'));
+    });
+
+});
 </script> 
 	
 
