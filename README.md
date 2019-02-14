@@ -6,12 +6,13 @@ Changes made:
 - udated mod10
 -  Audit page:
   - reworded legend to be named 'your unit'
-- Surevy page
+- Survey page
   - remove sub-numbering and add validation placeholders
   - fix label width
   - update outcomes
   - removed italicised text in outcome questions
 - Created and added email template
+- included NIHR disclaimer in footer and PIS sheet
 
 To do:
 - Formatting on the thankyou screen
