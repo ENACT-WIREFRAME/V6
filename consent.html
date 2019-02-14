@@ -112,14 +112,25 @@ layout: page
 <script>
 	$('#pis').on('shown.bs.modal', function () {
 	});
-	$(document).ready(function() {
-	$('#submit').prop('disabled', true); // disabled by default
-	$('input[type="checkbox"]').click(function() {
-       // change on checkbox click
-       $('#submit').prop('disabled', !$('input[type="checkbox"]').prop('checked'));
-    });
+	//$(document).ready(function() {
+	//	$('#submit').prop('disabled', true); // disabled by default
+	//	$('input[type="checkbox"]').click(function() {
+	//		// change on checkbox click
+	//		$('#submit').prop('disabled', !$('input[type="checkbox"]').prop('checked'));
+	//	});
+	//});
+	var $submit = $('#submit');
+		$checkbox = $('input[type=checkbox]');
 
-});
+		$submit.prop('disabled', true);
+
+		$checkbox.on('click', function(){
+		    if ($("input:checkbox:checked").length > 0) {
+			$submit.removeAttr('disabled');
+		    }else{
+			$submit.prop('disabled', true);
+		    }
+		});
 </script> 
 	
 
