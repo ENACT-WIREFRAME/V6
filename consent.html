@@ -119,13 +119,16 @@ layout: page
 	//		$('#submit').prop('disabled', !$('input[type="checkbox"]').prop('checked'));
 	//	});
 	//});
+	//$('a').each(function (index, value){
+ 	// console.log($(this).attr('href'));
+	//});
 	var $submit = $('#submit');
 		$checkbox = $('input[type=checkbox]');
 
 		$submit.prop('disabled', true);
 
 		$checkbox.on('click', function(){
-		    if ($("input:checkbox:checked").length > 0) {
+		    if ($("input:checkbox:checked").each) {
 			$submit.removeAttr('disabled');
 		    }else{
 			$submit.prop('disabled', true);
