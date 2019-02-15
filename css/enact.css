@@ -549,6 +549,7 @@ h2[id]::before {
     transform: translate(-50%, -50%);
     -webkit-transform-origin: center center;
     transform-origin: center center;
+    height:37px
 }
 
 
