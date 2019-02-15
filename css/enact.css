@@ -765,3 +765,6 @@ h2.lead{
 .button-bar{
     margin: 1.5em 0
 }
+.steps h3 div{
+display: inline
+}
