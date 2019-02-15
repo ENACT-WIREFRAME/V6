@@ -6,6 +6,7 @@ Changes made:
 - udated mod10
 -  Audit page:
   - reworded legend to be named 'your unit'
+  - removed all _title="mod-xx"_ attributes
 - Survey page
   - remove sub-numbering and add validation placeholders
   - fix label width
