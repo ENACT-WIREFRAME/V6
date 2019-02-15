@@ -1,6 +1,6 @@
 # V6 (PICANET) of enact-wireframe.io
 
-kick 
+kick it
 
 Changes made:
 - udated mod10
