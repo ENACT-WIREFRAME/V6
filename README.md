@@ -14,6 +14,7 @@ Changes made:
 - Created and added email template
 - included NIHR disclaimer in footer and PIS sheet
 - testing script to grey out consent button
+- fixes for ie legacy bugs
 
 To do:
 - Formatting on the thankyou screen
