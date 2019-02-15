@@ -16,10 +16,8 @@ Changes made:
 - included NIHR disclaimer in footer and PIS sheet
 - testing script to grey out consent button
 - fixes for ie legacy bugs
-
-To do:
 - Formatting on the thankyou screen
-- Fix logo on evidence-based-tips page
-- patient photo needs fixing on audit report page
+- Fix logo and .ico on evidence-based-tips page
+- patient photo fixed
 
 
