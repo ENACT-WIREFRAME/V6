@@ -4,9 +4,10 @@ kick it
 
 Changes made:
 - udated mod10
--  Audit page:
+-  Report page:
   - reworded legend to be named 'your unit'
   - removed all _title="mod-xx"_ attributes
+  - removed graph legend ul
 - Survey page
   - remove sub-numbering and add validation placeholders
   - fix label width
