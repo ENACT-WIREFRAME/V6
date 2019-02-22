@@ -33,4 +33,6 @@ Survey (outcomes) screen
 - add  classes .col-md-7 .col-sm-12 to Q1 <select>
 - include warning text in 'step back' link text at top and bottom of page 
 - add data-toggle="tooltip" data-placement="right" title="You can step back to look at the audit report again, but any answers entered on this page will not be saved." to bottom link
+Evidence based tips page
+- commented out the line linking to the Leeds project website
 
