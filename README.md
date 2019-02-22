@@ -28,5 +28,5 @@ Welcome screen:
 - Reword steps 3&4 (change to index.html)
 - switch footer headers from h4 to h5 (index.html)
 - Removed br from .lead text (index.html)
-- removed .pb3 from (index.html)
+- removed unnecessary class (col-md-8 mx-auto pb3) from .steps>p (index.html)
 
