@@ -22,7 +22,9 @@ Changes made:
 - patient photo fixed
 
 Changes after catchup with Steph on 19/02/19
+Welcome screen:
 - Justify logo and header (changes to index.html and enact.css)
 - Consistent font sizes (changes to index.html and enact.css)
 - Reword steps 3&4 (change to index.html)
+- switch footer headers from h4 to h5
 
