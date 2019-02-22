@@ -521,7 +521,7 @@ h2[id]::before {
     font-weight: 300;
 }
 .steps p{
-    margin: 1em;
+    margin: .25em;
 }
 .steps img {
     background-color: #fff;
