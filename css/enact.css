@@ -272,6 +272,9 @@ h2 {
     border: 0 none;
     margin: 5px 0;
 }
+.survey .list-group-item p {
+    font-weight: bold;
+}
 .survey .question {
     margin: 0;
 }
