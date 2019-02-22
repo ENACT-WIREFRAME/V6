@@ -26,5 +26,7 @@ Welcome screen:
 - Justify logo and header (changes to index.html and enact.css)
 - Consistent font sizes (changes to index.html and enact.css)
 - Reword steps 3&4 (change to index.html)
-- switch footer headers from h4 to h5
+- switch footer headers from h4 to h5 (index.html)
+- Removed br from .lead text (index.html)
+- removed .pb3 from (index.html)
 
