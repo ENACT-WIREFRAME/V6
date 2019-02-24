@@ -266,7 +266,10 @@ h2 {
 }
 /* ---- SURVEY STYLES ---- */
 .page h2 {
-     margin: 3em 0 0.5em;
+     margin: 1em 0 0.5em;
+}
+.page.report h2 {
+     margin-top: 3em;
 }
 .survey .list-group-item {
     border: 0 none;
