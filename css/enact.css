@@ -29,6 +29,9 @@
     font-weight: 800;
     margin: 5px 5px;
 }
+.navbar-dark .navbar-brand:hover, .navbar-dark .navbar-brand:focus{
+    color: #333
+}
 .page .navbar-brand{
     background: #f8f9fa; 
     color: #343a40;
