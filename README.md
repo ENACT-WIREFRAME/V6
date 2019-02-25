@@ -3,9 +3,13 @@
 kick 
 
 Changes made:
+After testing
+- fix column issues on audit screen and survey (overrunning text)
+
 - udated mod10
 -  Report page:
   - reworded legend to be named 'your unit'
+  
   - removed all _title="mod-xx"_ attributes
   - removed graph legend ul
 - Survey page
@@ -37,4 +41,6 @@ Thank you page
 - form formatting / structure
 Evidence based tips page
 - commented out the line linking to the Leeds project website
+  
+
 
