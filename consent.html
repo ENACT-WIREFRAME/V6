@@ -2,9 +2,13 @@
 layout: page
 ---
 {% include page-header.html pb-width="20" %}
-<main role="main">
-	<div class="container-fluid">
-		<div class="row">
+<div class="container-fluid">
+	<div class="row flex-xl-nowrap">
+		<div class="bd-sidebar">
+			<nav class="bg-light sidebar">
+			</nav>
+		</div>
+		<main class="col-12 col-md-9 col-xl-8 pl-md-5 bd-content" role="main">
 			<nav class="bg-light sidebar">
 			</nav>
 			<h2>Please confirm that you understand and agree to the following</h2>
@@ -103,9 +107,9 @@ layout: page
 					</div><!-- end modal-content-->
 				</div><!-- end modal-->
 			</div><!-- end modal-dialogue-->
-		</div><!-- END ROW-->
-	</div><!-- END CONTAINER_FLUID-->
-</main>
+		</main>
+	</div><!-- END ROW-->
+</div><!-- END CONTAINER_FLUID-->
 <footer class="footer">
 	{{ include.footer-approval.html }}
 </footer>
