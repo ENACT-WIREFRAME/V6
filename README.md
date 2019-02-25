@@ -5,6 +5,7 @@ kick
 Changes made:
 After testing
 - fix column issues on audit screen and survey (overrunning text)
+- surevy over flow isse IE
 
 - udated mod10
 -  Report page:
