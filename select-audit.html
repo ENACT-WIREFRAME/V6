@@ -2,11 +2,13 @@
 layout: page
 ---
 {% include page-header.html pb-width="40" %}
-<main role="main">
-	<div class="container-fluid">
-		<div class="row">
+<div class="container-fluid">
+	<div class="row flex-xl-nowrap">
+		<div class="bd-sidebar">
 			<nav class="bg-light sidebar">
 			</nav>
+		</div>
+		<main role="main" class="col-12 col-md-9 col-xl-8 pl-md-5 bd-content">
 			<h2>Please select your audit, role and organisation type</h2>
 			<form action="{{ site.baseurl }}/audit-report" class="select-audit">
 				<fieldset>
@@ -56,9 +58,9 @@ layout: page
 					<!--<a id="" href="" class="btn btn-lg btn-secondary"><span class="badge badge-pill">4.</span>&nbsp;View audit report</a>-->
 				</fieldset>
 			</form>
-		</div><!-- END ROW-->
-	</div><!-- END CONTAINER_FLUID-->
-</main>
+		</main>
+	</div><!-- END ROW-->
+</div><!-- END CONTAINER_FLUID-->
 <footer class="footer">
 	{{ include.footer-approval.html }}
 </footer>
