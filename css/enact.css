@@ -523,7 +523,6 @@ h2[id]::before {
     background-color: #e9ecef;
     border-radius: .3rem;
     /*color: #1F92C2*/
-    font-size: 1rem;
     font-weight: 300;
 }
 .steps h2{
@@ -548,9 +547,11 @@ h2[id]::before {
 }
 .lead {
     padding-top: 35px;
+
+}
+.steps, .steps h3 .f5, .lead{
     font-size: 1rem;
 }
-
 
 .fa-layers-counter, .fa-layers-text {
     display: inline-block;
