@@ -617,7 +617,8 @@ h2[id]::before {
 }
 .fa-fw {
     text-align: center;
-    width: 1.25em;
+    width: 1em;
+    margin-right: 2px
 }
 .fw6 {
     font-weight: 600;
