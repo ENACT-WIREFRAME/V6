@@ -786,3 +786,6 @@ h2.lead{
 .steps h3 div{
 display: inline
 }
+.steps .btn.mt-5{
+    margin-top: 1rem !important;
+}
