@@ -799,6 +799,7 @@ display: inline
     margin: 15px 0;
     background-color: white;
     padding: 5px;
+    border-left: 5px solid #63a14f;
 }
 .report .tab-content, .report .tabs{
     border-radius: 3px;
@@ -806,7 +807,6 @@ display: inline
 .tab-links{
     padding-top: 15px;
     padding-bottom: 15px;
-    padding-right: 0;
 }
 .nav-tabs .nav-link{
     color: inherit
