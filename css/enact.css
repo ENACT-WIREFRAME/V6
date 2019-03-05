@@ -818,7 +818,5 @@ display: inline
 }
 .report .nav-tabs .nav-link:last-child {
     border-bottom-left-radius: 0.25rem;
-    border-top-left-radius: 0 !important;
-    border-top-right-radius: 0 !important;
     border-bottom-right-radius: 0.25rem;
 }
