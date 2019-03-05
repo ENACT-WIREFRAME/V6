@@ -7,6 +7,7 @@ After testing
 - fix column issues on audit screen and survey (overrunning text)
 - surevy over flow isse IE
 - reduced size of images on welcome screen
+- mod 12 tab styling
 
 - udated mod10
 -  Report page:
