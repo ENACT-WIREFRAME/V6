@@ -494,7 +494,7 @@ border-radius: 50%;
     width: 0;
     height: 0;
     border-top: 13px solid transparent;
-    border-left: 13px solid #d6d8db;
+    border-left: 13px solid #63a14f;
     border-bottom: 13px solid transparent;
 }
 #block-d .nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link{
@@ -746,7 +746,7 @@ h2.lead{
 }
 #block-d .nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link{
     color: #383d41;
-    background-color: #d6d8db;
+    background-color: #63a14f;
 }
 #block-d .nav-tabs .nav-item{
    position: relative;
@@ -788,4 +788,26 @@ display: inline
 }
 .steps .btn.mt-5{
     margin-top: 1rem !important;
+}
+.report .tabs{
+    background-color: #e1e1e1;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.report .tab-content{
+    margin: 15px 0;
+    background-color: white;
+    padding: 5px;
+}
+.report .tab-content, .report .tabs{
+    border-radius: 3px;
+}
+.tab-links{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 0;
+}
+.nav-tabs .nav-link{
+    color: inherit
 }
