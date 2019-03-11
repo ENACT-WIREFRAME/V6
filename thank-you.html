@@ -2,52 +2,51 @@
 layout: page
 ---
 {% include page-header.html pb-width="100" %}
-<main role="main">
-	<div class="container-fluid">
-		<div id="message" class="alert alert-success-fade alert-dismissible fade show">
-			You have now completed the survey.
-			<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
-		</div>
-		<nav class="bg-light sidebar">
-		</nav>
-		<div class="col">
-			<h2>Thank you for your participation.</h2>
-			<p>
-				Hopefully this will help us to improve your experience of feedback in the future.
-			</p>
-			<p>
-				If you wish to receive the £25 voucher and /or the certificate of completion, please share your contact details below so that we can send one or both of these to you. If you do not wish to receive either of these, you can exit the survey now. 
-			</p>
-			<div class="form-check abc-checkbox abc-checkbox-success col-md-12">
-				<input class="form-check-input" id="consent-voucher" required="" type="checkbox">
-				<label class="form-check-label" for="consent-voucher">
-					Yes, I wish to receive the £25 voucher    
-				</label>
-			</div>
-			<div class="form-check abc-checkbox abc-checkbox-success col-md-12">
-				<input class="form-check-input" id="consent-certificate" required="" type="checkbox">
-				<label class="form-check-label" for="consent-certificate">
-				    Yes, I wish to receive a certificate of completion for my Continuing Professional Development records
-				</label>
-			</div>
-			<form class="form-inline input-group-lg mb-4 mt-4">
-				<label class="sr-only" for="inlineFormInputName2">Name</label>
-				<input class="form-control col-md-3" id="inlineFormInputName2" type="text" placeholder="Name to appear on certificate">
-				<label class="sr-only" for="inlineFormInputGroupUsername2">Email</label>
-				<div class="input-group input-group-lg col-md-6">
-					<div class="input-group-prepend">
-						<div class="input-group-text"><i class="far fa-envelope"></i></div>
-						</div>
-					<input class="form-control" id="inlineFormInputGroupUsername2" type="email" placeholder="Email address">
-					
-				</div>
-<button class="btn btn-primary btn-lg" type="submit">Submit<i class="fas fa-paper-plane ml-1"></i></button>
-			</form>
-			<p>
-				<a href="/V6/evidence-based-tips.html" target="_blank">Evidence-based tips for effective feedback</a>
-			</p>
-		</div><!-- end col-->
-	</div><!-- end container-fluid-->
-</main>
+<main role="main" class="col-12 col-md-9 col-xl-8 pl-md-5 bd-content">
+                
+                <div class="col">
+                    <h2>Thank you for your participation.</h2>
+                    <p>
+                        Hopefully this will help us to improve your experience of feedback in the future.
+                    </p>
+                    <p>
+                        If you wish to receive the £25 voucher and /or the certificate of completion, please share your contact details below so that we can send one or both of these to you. If you do not wish to receive either of these, you can exit the survey now.
+                    </p>
+                    <form role="form" method="post" action="/landing/saveExtra">
+                        <div class="form-check abc-checkbox abc-checkbox-success col-md-12">
+                            <input class="form-check-input" id="emailadd" type="checkbox" name="emailadd" onclick="setvou();">
+                            <label class="form-check-label" for="emailadd">
+                                Yes, I wish to receive the £25 voucher
+                            </label>
+                        </div>
+                        <div class="form-check abc-checkbox abc-checkbox-success col-md-12">
+                            <input class="form-check-input" id="certifi" name="certifi" onclick="setCertificate();" required="" type="checkbox">
+                            <label class="form-check-label" for="certifi">
+                                Yes, I wish to receive a certificate of completion for my Continuing Professional Development records
+                            </label>
+                        </div>
+                        <div class="form-group input-control-lg mb-4 mt-4">
+                            <label for="Name">Name to appear on certificate</label>
+                            <input class="form-control" id="Name" name="Name" type="text" placeholder="This will be printed on your certificate">
+                        </div>
+                        <div class="form-group input-control-lg mb-4 mt-4">
+                            <label for="email">Email address</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text"><i class="far fa-envelope"></i></div>
+                                </div>
+                                <input class="form-control" id="email" name="email" type="email" placeholder="We will send you certificate and/or voucher here">
+                            </div>
+                        </div>
+                        <button id="donebtn" class="btn btn-primary btn-lg" type="submit">Submit<i class="fas fa-paper-plane ml-1"></i></button>
+                        <div style="display:none">
+                            <input type="text" class="form-control" id="trialID" name="trialID" value="82">
+                        </div>
+                    </form>
+                    <p class="mt-4">
+                        <a href="/Landing/evidencebasedtips" target="_blank">Evidence-based tips for effective feedback</a>
+                    </p>
+                </div><!-- end col-->
+            </main>
 
 
