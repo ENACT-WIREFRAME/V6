@@ -8,6 +8,7 @@ After testing
 - surevy over flow isse IE
 - reduced size of images on welcome screen
 - mod 12 tab styling
+- updated than you screen
 
 - udated mod10
 -  Report page:
