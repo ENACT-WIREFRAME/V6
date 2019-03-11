@@ -70,6 +70,7 @@ h1 .text-muted{margin-left: 10px}
 }
 .page [role="main"] {
     padding-top: 80px;
+     padding-bottom: 80px;
     max-width: 95.333333%;
 }
 .select-audit .btn-group{
