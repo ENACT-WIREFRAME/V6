@@ -272,7 +272,7 @@ h2 {
 .page h2 {
      margin: 1em 0 0.5em;
 }
-.page.report h2 {
+.page.report .section-header {
      margin-top: 1.75em;
 }
 .survey .list-group-item {
