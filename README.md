@@ -9,6 +9,7 @@ After testing
 - reduced size of images on welcome screen
 - mod 12 tab styling
 - updated than you screen
+- fix LH nav links
 
 - udated mod10
 -  Report page:
