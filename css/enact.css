@@ -366,18 +366,14 @@ h2 {
     margin-top: 2em;
 }
 
-.page.report .section-header.hidden {
-    height: 1em;
-}
+    .page.report .section-header.hidden {
+        height: 1em;
+    }
 
 .survey .list-group-item {
     border: 0 none;
     margin: 5px 0;
 }
-
-    .survey .list-group-item p {
-        font-weight: bold;
-    }
 
 .survey .question {
     margin: 0;
@@ -645,7 +641,7 @@ h2[id]::before {
 }
 
 #block-c .fas {
-    color: var(--green);
+    color: #28a745;
 }
 
 .steps {
@@ -914,7 +910,7 @@ h2.lead {
 }
 
 .modal-body {
-    height: 250px;
+    height: 350px;
     overflow-y: auto;
 }
 
@@ -1012,4 +1008,8 @@ h2.lead {
     border-top-right-radius: 0.25rem;
     border-bottom-left-radius: 0.25rem;
     border-bottom-right-radius: 0.25rem;
+}
+
+.likert-scale label {
+    margin-bottom: 10px
 }
