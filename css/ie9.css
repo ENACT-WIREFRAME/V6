@@ -1,0 +1,6 @@
+ .steps .col-lg-3 {
+    max-width: 24%;
+  }
+ .steps .flex {
+    display: inline-table;
+}
