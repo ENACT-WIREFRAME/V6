@@ -1,6 +1,6 @@
 # V6 (PICANET) of enact-wireframe.io
 
-kick it 
+kick
 
 Changes made:
 After testing
