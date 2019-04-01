@@ -10,6 +10,7 @@ After testing
 - mod 12 tab styling
 - updated than you screen
 - fix LH nav links
+- added browser instructions on thankyou page
 
 - udated mod10
 -  Report page:
