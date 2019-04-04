@@ -11,6 +11,7 @@ After testing
 - updated than you screen
 - fix LH nav links
 - added browser instructions on thankyou page
+- updated email
 
 - udated mod10
 -  Report page:
